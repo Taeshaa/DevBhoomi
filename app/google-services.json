@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "748424062355",
+    "project_id": "devbhoomi-7204f",
+    "storage_bucket": "devbhoomi-7204f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:748424062355:android:78cede94c37c6b9e967466",
+        "android_client_info": {
+          "package_name": "com.example.devbhoomi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "748424062355-befp9bva323991q93b7aegp2ue167mmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrdS_Z2hzp65W7HQYpr3fcd4ELJYQKf4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "748424062355-befp9bva323991q93b7aegp2ue167mmu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
