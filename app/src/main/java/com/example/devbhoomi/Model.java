@@ -1,17 +1,18 @@
 package com.example.devbhoomi;
 
 public class Model {
-    String id,name,age,city,start,end,desc,phone;
+    String id,name,phone,officer,desc,place,time;
 
     public Model(){}
 
-    public Model(String id,String name,String city,String start,String end,String phone){
+    public Model(String name,String phone,String officer,String desc,String place,String time,String id){
         this.id=id;
         this.name=name;
-        this.city=city;
-        this.start=start;
-        this.end=end;
         this.phone=phone;
+        this.officer=officer;
+        this.desc=desc;
+        this.place=place;
+        this.time=time;
     }
 
     public String getId() {
@@ -30,36 +31,20 @@ public class Model {
         this.name = name;
     }
 
-    public String getAge() {
-        return age;
+    public String getPlace() {
+        return place;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setPlace(String place) {
+        this.place = place;
     }
 
-    public String getCity() {
-        return city;
+    public String getTime() {
+        return time;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getStart() {
-        return start;
-    }
-
-    public void setStart(String start) {
-        this.start = start;
-    }
-
-    public String getEnd() {
-        return end;
-    }
-
-    public void setEnd(String end) {
-        this.end = end;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public String getDesc() {
@@ -76,5 +61,13 @@ public class Model {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getOfficer() {
+        return officer;
+    }
+
+    public void setOfficer(String officer) {
+        this.officer = officer;
     }
 }

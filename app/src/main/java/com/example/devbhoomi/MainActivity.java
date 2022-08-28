@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         int SPLASH_TIME_OUT = 4000;
         new Handler() .postDelayed(() -> {
-            Intent homeIntent = new Intent(MainActivity.this, introPage.class);
+            Intent homeIntent = new Intent(MainActivity.this, UserChoice.class);
             startActivity(homeIntent);
             finish();
         }, SPLASH_TIME_OUT);

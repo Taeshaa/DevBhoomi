@@ -33,4 +33,10 @@
         <item name="boxStrokeColor">#296D98</item>
         <item name="boxStrokeWidth">1dp</item>
     </style>
+    <style name="Theme.DevBhoomi.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.DevBhoomi.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.DevBhoomi.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -93,8 +93,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:text="History Sheeters"
-                        android:textSize="19sp"
-                         />
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/bus"
@@ -107,6 +106,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CH"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -123,9 +123,8 @@
                         android:layout_below="@id/imageView3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Traffic Management"
-                        android:textSize="19sp"
-                         />
+                        android:text="Challan"
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/imageView3"
@@ -150,6 +149,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/TH"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -166,9 +166,8 @@
                         android:layout_below="@id/bus1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Training"
-                        android:textSize="19sp"
-                         />
+                        android:text="Theft"
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/bus1"
@@ -181,6 +180,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/Cases"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -197,9 +197,8 @@
                         android:layout_below="@id/train"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Law And Order"
-                        android:textSize="19sp"
-                         />
+                        android:text="Case Status"
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/train"
@@ -223,6 +222,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/AR"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -239,9 +239,8 @@
                         android:layout_below="@id/cycle"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Finance"
-                        android:textSize="19sp"
-                         />
+                        android:text="Arrested"
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/cycle"
@@ -254,6 +253,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/DC"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
@@ -270,9 +270,8 @@
                         android:layout_below="@id/airplane"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Forensic Lab"
-                        android:textSize="19sp"
-                         />
+                        android:text="Drug Cases"
+                        android:textSize="19sp" />
 
                     <ImageView
                         android:id="@+id/airplane"

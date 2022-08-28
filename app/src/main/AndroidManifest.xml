@@ -10,6 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevBhoomi">
         <activity
+            android:name=".ShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Charts"
+            android:exported="false" />
+        <activity
+            android:name=".SSPDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivitySSP"
+            android:exported="false" />
+        <activity
+            android:name=".DrugCase"
+            android:exported="false" />
+        <activity
+            android:name=".UserChoice"
+            android:exported="false" />
+        <activity
+            android:name=".Arrest"
+            android:exported="false" />
+        <activity
+            android:name=".CasesRegistered"
+            android:exported="false" />
+        <activity
+            android:name=".Theft"
+            android:exported="false" />
+        <activity
+            android:name=".Challan"
+            android:exported="false" />
+        <activity
             android:name=".TouchHelper"
             android:exported="false" />
         <activity
