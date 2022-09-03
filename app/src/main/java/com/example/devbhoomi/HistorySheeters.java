@@ -94,14 +94,16 @@ public class HistorySheeters extends AppCompatActivity {
                                 Toast.makeText(HistorySheeters.this, "Data Saved !!", Toast.LENGTH_SHORT).show();
                             }
                         }
-                    }).addOnFailureListener(new OnFailureListener() {
-                @Override
-                public void onFailure(@NonNull Exception e) {
-                    Toast.makeText(HistorySheeters.this, "Failed !!", Toast.LENGTH_SHORT).show();
-                }
-            });
+                    })
+                    .addOnFailureListener(new OnFailureListener() {
+                       @Override
+                       public void onFailure(@NonNull Exception e) {
+                       Toast.makeText(HistorySheeters.this, "Failed !!", Toast.LENGTH_SHORT).show();
+                       }
+                    });
 
-        }else
+        }
+        else
             Toast.makeText(this, "Empty Fields not Allowed", Toast.LENGTH_SHORT).show();
     }
 }

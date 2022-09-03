@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevBhoomi">
         <activity
+            android:name=".CasesType"
+            android:exported="false" />
+        <activity
             android:name=".ShowActivity"
             android:exported="false" />
         <activity
