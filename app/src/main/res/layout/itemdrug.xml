@@ -26,7 +26,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/name_text"
+                android:id="@+id/name_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -50,7 +50,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/phone_text"
+                android:id="@+id/phone_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -68,13 +68,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Officer On Duty :"
+                android:text="Age :"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/officer_text"
+                android:id="@+id/age_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -92,13 +92,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Theft Description :"
+                android:text="Drug :"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/desc_text"
+                android:id="@+id/drug_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -116,13 +116,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Place :"
+                android:text="City :"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/place_text"
+                android:id="@+id/place_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -140,13 +140,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time :"
+                android:text="Quantity :"
                 android:textColor="@color/black"
                 android:textSize="26sp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/time_text"
+                android:id="@+id/quant_drug"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"

@@ -52,14 +52,14 @@ public class HistorySheeters extends AppCompatActivity {
 
                 String Name = name.getText().toString();
                 String Age = age.getText().toString();
+                String Phone = phone.getText().toString();
+                String City= city.getText().toString();
                 String Start = start.getText().toString();
                 String End = end.getText().toString();
-                String Phone = phone.getText().toString();
                 String Desc = desc.getText().toString();
-                String City = city.getText().toString();
                 String id=UUID.randomUUID().toString();
 
-                saveToFireStore(id,Name,Age,Start,End,Desc,Phone,City);
+                saveToFireStore(id,Name,Age,Phone,City,Start,End,Desc);
             }
         });
         mShowBtn.setOnClickListener(new View.OnClickListener() {
@@ -73,17 +73,18 @@ public class HistorySheeters extends AppCompatActivity {
     }
 
 
-    private void saveToFireStore(String id , String Name , String Age,String City,String Start,String End,String Desc,String Phone){
+    private void saveToFireStore(String id , String Name , String Age,String Phone,String City,String Start,String End,String Desc){
 
         if (!Name.isEmpty() && !Age.isEmpty() && !Phone.isEmpty() && !City.isEmpty() && !Start.isEmpty() && !End.isEmpty() && !Desc.isEmpty()){
             HashMap<String , Object> map = new HashMap<>();
             map.put("id" , id);
             map.put("Name" , Name);
-            map.put("Description" , Desc);
             map.put("Age" , Age);
             map.put("Phone Number" , Phone);
+            map.put("City" , City);
             map.put("Start" , Start);
             map.put("End" , End);
+            map.put("Description", Desc);
 
 
             db.collection("Documents").document(id).set(map)
@@ -94,16 +95,14 @@ public class HistorySheeters extends AppCompatActivity {
                                 Toast.makeText(HistorySheeters.this, "Data Saved !!", Toast.LENGTH_SHORT).show();
                             }
                         }
-                    })
-                    .addOnFailureListener(new OnFailureListener() {
-                       @Override
-                       public void onFailure(@NonNull Exception e) {
-                       Toast.makeText(HistorySheeters.this, "Failed !!", Toast.LENGTH_SHORT).show();
-                       }
-                    });
+                    }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    Toast.makeText(HistorySheeters.this, "Failed !!", Toast.LENGTH_SHORT).show();
+                }
+            });
 
-        }
-        else
+        }else
             Toast.makeText(this, "Empty Fields not Allowed", Toast.LENGTH_SHORT).show();
     }
 }

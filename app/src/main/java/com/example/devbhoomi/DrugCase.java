@@ -21,7 +21,7 @@ import java.util.UUID;
 
 public class DrugCase extends AppCompatActivity {
 
-    private EditText name , age, phone, city, start, quantity;
+    private EditText name , age, city, drug, quantity, phone;
     private Button mSaveBtn;
     private FirebaseFirestore db;
     //private String uTitle, uDesc , uId;
@@ -35,7 +35,7 @@ public class DrugCase extends AppCompatActivity {
         age = findViewById(R.id.idEdtCulpritAge);
         phone = findViewById(R.id.idEdtCulpritPh);
         city = findViewById(R.id.idEdtCulpritCity);
-        start = findViewById(R.id.idEdtDrugDate);
+        drug = findViewById(R.id.idEdtDrug);
         quantity = findViewById(R.id.idEdtQuantityFound);
         mSaveBtn = findViewById(R.id.idBtnAddCourse);
 
@@ -50,29 +50,30 @@ public class DrugCase extends AppCompatActivity {
 
                 String Name = name.getText().toString();
                 String Age = age.getText().toString();
-                String Start = start.getText().toString();
+                String Drug = drug.getText().toString();
 
-
+                String Phone = phone.getText().toString();
                 String Quantity = quantity.getText().toString();
                 String City = city.getText().toString();
                 String id=UUID.randomUUID().toString();
 
-                saveToFireStore(id,Name,Age,Start,Quantity,City);
+                saveToFireStore(id,Name,Age,Drug,Quantity,City,Phone);
             }
         });
     }
 
 
-    private void saveToFireStore(String id , String Name , String Age,String City,String Start,String Quantity ){
+    private void saveToFireStore(String id , String Name , String Age,String Drug,String Quantity,String City, String Phone ){
 
-        if (!Name.isEmpty() && !Age.isEmpty() && !City.isEmpty() && !Start.isEmpty() &&  !Quantity.isEmpty()){
+        if (!Name.isEmpty() && !Age.isEmpty() && !City.isEmpty() && !Drug.isEmpty() &&  !Quantity.isEmpty() &&  !Phone.isEmpty()){
             HashMap<String , Object> map = new HashMap<>();
             map.put("id" , id);
             map.put("Name" , Name);
             map.put("Quantity Found" , Quantity);
             map.put("Age" , Age);
-
-            map.put("Date" , Start);
+            map.put("City", City);
+            map.put("Date" , Drug);
+            map.put("Phone", Phone);
 
 
 

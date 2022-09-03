@@ -66,14 +66,14 @@ public class Challan extends AppCompatActivity {
     }
 
 
-    private void saveToFireStore(String id , String Name , String Age,String City,String Date,String Officer,String Desc,String Phone, String vehicleNo){
+    private void saveToFireStore(String id , String Name , String Age,String Date,String vehicleNo,String Desc,String Phone,String City, String Officer){
 
         if (!Name.isEmpty() && !Age.isEmpty() && !Phone.isEmpty() && !City.isEmpty() && !Date.isEmpty() && !Officer.isEmpty() && !Desc.isEmpty() && !vehicleNo.isEmpty()){
             HashMap<String , Object> map = new HashMap<>();
             map.put("id" , id);
             map.put("PayerName" , Name);
-            map.put("OffenceDescription" , Desc);
-            map.put("PayerAge" , Age);
+            map.put("Offence Description" , Desc);
+            map.put("Payer Age" , Age);
             map.put("Payer Phone Number" , Phone);
             map.put("Date of Registration" , Date);
             map.put("VehicleNo." , vehicleNo);

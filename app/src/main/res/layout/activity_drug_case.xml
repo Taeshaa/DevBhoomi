@@ -138,7 +138,7 @@
                 app:hintTextColor="@color/white">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/idEdtDrugDate"
+                    android:id="@+id/idEdtDrug"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:ems="10"

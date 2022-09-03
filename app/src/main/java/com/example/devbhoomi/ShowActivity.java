@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -48,16 +49,17 @@ public class ShowActivity extends AppCompatActivity {
 
     public void showData(){
 
-        db.collection("Theft").get()
+        db.collection("Theft").whereEqualTo("Officer On Duty", "rakesh").get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        list.clear();
-                        for (DocumentSnapshot snapshot : task.getResult()){
+                            list.clear();
+                            for (DocumentSnapshot snapshot : task.getResult()) {
+                                Model model = new Model(snapshot.getString("Complainant Name"), snapshot.getString("Complainant Phone"), snapshot.getString("Officer On Duty"), snapshot.getString("Theft Description"), snapshot.getString("Theft Place"), snapshot.getString("Theft Time"), snapshot.getString("id"));
+                                list.add(model);
+                            }
 
-                            Model model = new Model(snapshot.getString("Complainant Name") , snapshot.getString("Complainant Phone") , snapshot.getString("Officer On Duty") ,snapshot.getString("Theft Description") ,snapshot.getString("Theft Place"),snapshot.getString("Theft Time") ,snapshot.getString("id"));
-                            list.add(model);
-                        }
+
                         adapter.notifyDataSetChanged();
                     }
                 }).addOnFailureListener(new OnFailureListener() {

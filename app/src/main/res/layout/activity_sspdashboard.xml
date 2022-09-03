@@ -172,6 +172,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/opium"
                 android:layout_width="90dp"
                 android:layout_height="150dp"
                 android:layout_margin="20dp"
@@ -194,8 +195,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="Olivia"
-                        android:textSize="20sp" />
+                        android:text="OpiumCases"
+                        android:textSize="15dp" />
 
                 </LinearLayout>
 
