@@ -30,7 +30,7 @@ public class ShowCases extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_cases);
 
-        recyclerView = findViewById(R.id.recyclerview);
+        recyclerView = findViewById(R.id.recyclerview1);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -53,7 +53,8 @@ public class ShowCases extends AppCompatActivity {
                         list.clear();
                         for (DocumentSnapshot snapshot : task.getResult()){
 
-                            ModelCase model = new ModelCase(snapshot.getString("Name") , snapshot.getString("Phone") , snapshot.getString("City") ,snapshot.getString("Drug") ,snapshot.getString("Quantity Found"),snapshot.getString("id"),snapshot.getString("age"));
+                            ModelCase model = new ModelCase(snapshot.getString("Name") , snapshot.getString("Phone") , snapshot.getString("City") ,snapshot.getString("Date") ,snapshot.getString("Quantity Found"),snapshot.getString("id"),snapshot.getString("Age"));
+                            list.add(model);
                         }
                         adapter.notifyDataSetChanged();
                     }
