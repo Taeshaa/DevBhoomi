@@ -1,5 +1,16 @@
 package com.example.devbhoomi;
+import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,9 +32,18 @@ import java.util.UUID;
 
 public class CasesRegistered extends AppCompatActivity {
 
+    String[] items =  {"Murder","Rape","Suicide","Domestic Abuse"};
+    AutoCompleteTextView autoCompleteTxt;
+    ArrayAdapter<String> adapterItems;
+
+
     private EditText name ,bailable, desc, city, date,category;
     private Button mSaveBtn;
     private FirebaseFirestore db;
+    private Spinner spin;
+    private TextView textView;
+
+
     //private String uTitle, uDesc , uId;
 
     @Override
@@ -33,7 +53,7 @@ public class CasesRegistered extends AppCompatActivity {
 
         name = findViewById(R.id.idEdtOfficerName);
         bailable = findViewById(R.id.idEdtBailable);
-        category = findViewById(R.id.idEdtCourseCategory);
+
         city = findViewById(R.id.idEdtCaseCity);
         date = findViewById(R.id.idEdtCaseDate);
         desc = findViewById(R.id.idEdtCaseDesc);
@@ -41,6 +61,18 @@ public class CasesRegistered extends AppCompatActivity {
 
 
         db= FirebaseFirestore.getInstance();
+        autoCompleteTxt = findViewById(R.id.auto_complete_txt);
+
+        adapterItems = new ArrayAdapter<String>(this,R.layout.list_item,items);
+        autoCompleteTxt.setAdapter(adapterItems);
+
+        autoCompleteTxt.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String item = parent.getItemAtPosition(position).toString();
+                Toast.makeText(getApplicationContext(),"Item: "+item,Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
 
@@ -49,7 +81,7 @@ public class CasesRegistered extends AppCompatActivity {
             public void onClick(View v) {
 
                 String Name = name.getText().toString();
-                String Category = category.getText().toString();
+                String Category = autoCompleteTxt.getText().toString();
                 String Date = date.getText().toString();
                 String Bailable = bailable.getText().toString();
                 String Desc = desc.getText().toString();
@@ -59,7 +91,9 @@ public class CasesRegistered extends AppCompatActivity {
                 saveToFireStore(id,Name,Date,Category,Desc,Bailable,City);
             }
         });
+
     }
+
 
 
     private void saveToFireStore(String id , String Name , String Date,String Category,String Desc,String Bailable,String City){

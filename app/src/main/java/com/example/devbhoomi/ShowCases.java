@@ -30,7 +30,7 @@ public class ShowCases extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_cases);
 
-        recyclerView = findViewById(R.id.recyclerview1);
+        recyclerView = findViewById(R.id.recyclervieww);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

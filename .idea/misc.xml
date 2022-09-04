@@ -8,7 +8,7 @@
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/drawable/progress_back.xml" value="0.10625" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/drawable/rounded_drawable.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_arrest.xml" value="0.1" />
-        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_cases_registered.xml" value="0.264" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_cases_registered.xml" value="0.2934131736526946" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_cases_type.xml" value="0.264" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_challan.xml" value="0.4" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_charts.xml" value="0.17962962962962964" />
@@ -21,14 +21,25 @@
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter1.xml" value="0.1" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter_juvenile.xml" value="0.1" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter_murder.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter_rape.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_my_adapter_suicide.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_cases.xml" value="0.2" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_cases_j.xml" value="0.1" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_cases_murder.xml" value="0.15555555555555556" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_cases_rape.xml" value="0.176" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_cases_suicide.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_show_murder.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_sspdashboard.xml" value="0.176" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_theft.xml" value="0.264" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_touch_helper.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/activity_user_choice.xml" value="0.17962962962962964" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/item.xml" value="0.1" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/item_j.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/itemdrug.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/mendi/AndroidStudioProjects/DevBhoomi/app/src/main/res/layout/list_item.xml" value="0.17962962962962964" />
       </map>
     </option>
   </component>

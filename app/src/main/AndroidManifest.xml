@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DevBhoomi">
         <activity
+            android:name=".MyAdapterSuicide"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCasesSuicide"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCasesRape"
+            android:exported="false" />
+        <activity
+            android:name=".ShowMurder"
+            android:exported="false" />
+        <activity
+            android:name=".ShowCasesJ"
+            android:exported="false" />
+        <activity
+            android:name=".MyAdapterJuvenile"
+            android:exported="false" />
+        <activity
+            android:name=".MyAdapterMurder"
+            android:exported="false" />
+        <activity
             android:name=".MyAdapter1"
             android:exported="false" />
         <activity

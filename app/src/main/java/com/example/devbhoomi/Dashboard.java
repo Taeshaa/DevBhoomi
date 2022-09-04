@@ -48,7 +48,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // opening a login activity on clicking login text.
-                Intent i = new Intent(Dashboard.this, ShowCases.class);
+                Intent i = new Intent(Dashboard.this, CasesRegistered.class);
                 startActivity(i);
             }
         });
@@ -64,7 +64,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // opening a login activity on clicking login text.
-                Intent i = new Intent(Dashboard.this, ShowCases.class);
+                Intent i = new Intent(Dashboard.this, DrugCase.class);
                 startActivity(i);
             }
         });
